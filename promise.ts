@@ -1,4 +1,4 @@
-const miPromesa = new Promise<string>((resolve, reject) => {
+const promesa = new Promise<string>((resolve, reject) => {
         setTimeout(() => {
         console.log("Esto sigue corriendo")
         resolve("Este es el resultado de la promesa")
@@ -21,7 +21,7 @@ const miPromesa = new Promise<string>((resolve, reject) => {
 //2da forma
 const promiseResolver = async() => {
     try {
-        const resultado = await miPromesa
+        const resultado = await promesa
         console.log("Resultado:", resultado)
     } catch (err) {
         console.log("Error:", err)
