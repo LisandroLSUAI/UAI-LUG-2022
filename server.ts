@@ -3,7 +3,11 @@ dotenv.config();
 
 import express, { Express } from "express";
 import mongoose from "mongoose";
+<<<<<<< HEAD
 import apiRouter from "./api";
+=======
+import apiRoutes from "./routes/api";
+>>>>>>> main
 
 const app: Express = express();
 
